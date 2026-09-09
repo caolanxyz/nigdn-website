@@ -1,0 +1,19 @@
+:root{
+/* Brand purple scale */
+--purple-50:#F5F0FF;--purple-100:#EBE0FF;--purple-200:#D4C2FF;--purple-300:#B594FF;--purple-400:#9B6BFF;--purple-500:#8B5CF6;--purple-600:#6D3AE8;--purple-700:#5B21B6;--purple-800:#43148A;--purple-900:#2A0B5C;--purple-950:#190640;
+/* Neutrals (cool, faintly violet) */
+--ink-950:#0E0A1A;--ink-900:#17122A;--ink-800:#241D3A;--ink-700:#3A3152;--ink-600:#554B6E;--ink-500:#75698E;--ink-400:#9A8FB0;--ink-300:#C1B9D1;--ink-200:#DED8EA;--ink-100:#EEEAF5;--ink-50:#F7F5FB;--white:#FFFFFF;
+/* Semantic (deliberately no green/orange — see readme) */
+--sky-500:#2E9BE7;--sky-100:#DDF0FD;--rose-500:#E0386D;--rose-100:#FCE1EA;--gold-500:#E6B422;--gold-100:#FBF1CC;--teal-500:#14A89A;--teal-100:#D5F3F0;
+/* Event graphics palette (from PlayMyDemo squares and roller banner) */
+--indigo-700:#2B1E8C;--violet-600:#6C3F9E;--orchid-500:#8A4E9F;--magenta-700:#8E2557;--pink-300:#E9A8C2;--pink-200:#F3C9D9;
+/* PlayMyDemo wordmark letter colours */
+--pmd-pink:#BF527E;--pmd-indigo:#5552B3;--pmd-violet:#714398;--pmd-deep:#3F3D8A;
+--halftone-dot:rgba(124,58,237,.55); /* @kind color */
+/* Semantic aliases */
+--brand:var(--purple-600);--brand-strong:var(--purple-700);--brand-soft:var(--purple-100);--brand-glow:var(--purple-400);--brand-label:var(--pink-300);
+--text-body:var(--ink-800);--text-heading:var(--ink-950);--text-muted:var(--ink-500);--text-inverse:var(--white);--text-link:var(--purple-600);--text-on-brand:var(--white);
+--surface-page:var(--white);--surface-subtle:var(--ink-50);--surface-card:var(--white);--surface-dark:var(--ink-950);--surface-dark-raised:var(--ink-900);--surface-brand:var(--purple-600);--surface-brand-deep:var(--purple-900);
+--border-default:var(--ink-200);--border-strong:var(--ink-300);--border-dark:var(--ink-700);--border-focus:var(--purple-500);
+--status-info:var(--sky-500);--status-info-bg:var(--sky-100);--status-danger:var(--rose-500);--status-danger-bg:var(--rose-100);--status-highlight:var(--gold-500);--status-highlight-bg:var(--gold-100);--status-success:var(--teal-500);--status-success-bg:var(--teal-100);
+}

@@ -1,0 +1,4 @@
+/* Webfonts. Space Mono + Manrope from Google Fonts; Name Smile and Game Commands are brand files supplied by the user. */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:ital,wght@0,400;0,700;1,400&family=Manrope:wght@400;500;600;700;800&display=swap");
+@font-face{font-family:"Name Smile";src:url("../assets/fonts/NameSmile.otf") format("opentype");font-weight:400;font-style:normal;font-display:swap}
+@font-face{font-family:"Game Commands";src:url("../assets/fonts/GameCommands.ttf") format("truetype");font-weight:400;font-style:normal;font-display:swap}
