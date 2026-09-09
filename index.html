@@ -53,11 +53,14 @@
   [data-r="bah2"]{font-size:30px!important}
 }
 @media (max-width:600px){
-  [data-r="hdr"]{height:auto!important}
-  [data-r="navwrap"]{flex-wrap:wrap!important;gap:0 16px!important;padding:12px 16px 0!important}
+  [data-r="navwrap"]{gap:12px!important;padding:0 16px!important}
   [data-r="navwrap"]>.nigdn-btn{margin-left:auto}
-  [data-r="nav"]{order:3;flex:1 0 100%!important;margin-left:-8px!important;flex-wrap:wrap;padding:6px 0 10px!important;gap:0 2px!important}
-  [data-r="nav"]>a{white-space:nowrap;font-size:14px!important;padding:6px 8px!important}
+  [data-r="burger"]{display:flex!important}
+  [data-r="nav"]{display:none!important;position:absolute;left:0;right:0;top:72px;flex-direction:column;gap:2px!important;padding:8px 16px 16px;margin:0!important;background:rgba(255,255,255,.97);border-bottom:1px solid var(--border-default)}
+  [data-r="nav"]>a{font-size:17px!important;padding:12px 12px!important}
+  #navtoggle:checked~[data-r="nav"]{display:flex!important}
+  #navtoggle:checked~[data-r="burger"] [data-r="ico-open"]{display:none}
+  #navtoggle:checked~[data-r="burger"] [data-r="ico-close"]{display:block}
   [data-r="h1"]{font-size:32px!important}
   [data-r="lead"]{font-size:17px!important}
   [data-r="photos"]{max-width:440px!important;margin:0 auto!important}
@@ -73,8 +76,10 @@
 </helmet>
 <div data-screen-label="Home v2" style="min-height:100vh">
   <header data-r="hdr" style="position:sticky;top:0;z-index:50;height:72px;background:rgba(255,255,255,.85);backdrop-filter:blur(12px);border-bottom:1px solid var(--border-default)">
-    <div data-r="navwrap" style="max-width:1200px;margin:0 auto;padding:0 24px;height:100%;display:flex;align-items:center;gap:32px">
+    <div data-r="navwrap" style="max-width:1200px;margin:0 auto;padding:0 24px;height:100%;display:flex;align-items:center;gap:32px;position:relative">
       <a href="#top" style="display:flex"><img src="assets/nigdn-logo.svg" alt="NI Game Dev Network" style="height:30px"></a>
+      <input type="checkbox" id="navtoggle" style="position:absolute;opacity:0;width:0;height:0;pointer-events:none" aria-label="Toggle menu">
+      <label data-r="burger" for="navtoggle" style="display:none;order:4;width:44px;height:44px;align-items:center;justify-content:center;border-radius:10px;color:var(--text-heading);cursor:pointer" aria-label="Menu"><svg data-r="ico-open" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round"><path d="M4 7h16M4 12h16M4 17h16"></path></svg><svg data-r="ico-close" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" style="display:none"><path d="M6 6l12 12M18 6L6 18"></path></svg></label>
       <nav data-r="nav" style="display:flex;gap:4px;margin-left:auto">
         <a href="#playmydemo" style="padding:8px 12px;border-radius:8px;font-size:15px;font-weight:600;color:var(--text-body)" style-hover="background:var(--ink-100);text-decoration:none">PlayMyDemo</a>
         <a href="#team" style="padding:8px 12px;border-radius:8px;font-size:15px;font-weight:600;color:var(--text-body)" style-hover="background:var(--ink-100);text-decoration:none">Team</a>
@@ -117,7 +122,7 @@
       <div style="display:flex;align-items:center;gap:14px;margin-top:32px;font-family:var(--font-display);font-size:13px;color:var(--pink-200)"><span>Supported By</span><img src="assets/ni-screen-logo-white.png" alt="Northern Ireland Screen" style="height:36px;display:block"></div>
     </div>
     <div data-r="cal" style="display:flex;min-height:520px">
-      <iframe src="https://luma.com/embed/calendar/cal-fjYQWdSfhZBcnzZ/events" title="Upcoming events" style="width:100%;height:auto;flex:1;border:1px solid rgba(255,255,255,.18);border-radius:14px;background:#fff"></iframe>
+      <iframe src="https://luma.com/embed/calendar/cal-fjYQWdSfhZBcnzZ/events?lt=dark" width="600" height="450" frameborder="0" style="width:100%;height:auto;flex:1;border:1px solid rgba(255,255,255,.18);border-radius:14px" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
     </div>
   </div>
   </section>
