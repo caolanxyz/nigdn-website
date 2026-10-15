@@ -104,7 +104,7 @@
         </ol>
         <div style="margin-top:20px;padding:18px 22px;border:1px solid var(--border-default);border-radius:14px;background:var(--purple-50);display:flex;gap:14px;align-items:flex-start">
           <span style="flex:none;color:var(--brand);margin-top:2px"><x-import component-from-global-scope="NIGameDevNetworkDesignSystem_63115f.Icon" name="shield" size="{{ 20 }}" hint-size="20px,20px"></x-import></span>
-          <p style="margin:0;font-size:16px;line-height:1.6;color:var(--text-body)">Report any concerning behaviour by reaching out to a Moderator on Discord, or to any organiser at an event. One of our team will be able to help you in private.</p>
+          <p style="margin:0;font-size:16px;line-height:1.6;color:var(--text-body)">Report any concerning behaviour by reaching out to a Moderator on Discord, or to any organiser at an event. One of our team will be able to help you in private. You can also email any concerns to <a href="mailto:safety@nigame.dev" style="color:var(--brand);font-weight:600">safety@nigame.dev</a>.</p>
         </div>
       </section>
 
@@ -175,7 +175,7 @@
         </div></div>
       <div><div style="font-family:var(--font-display);font-size:12px;color:var(--brand-label);margin-bottom:14px">COMMUNITY</div>
         <div style="display:flex;flex-direction:column;gap:10px">
-          <sc-for list="{{ socials }}" as="s" hint-placeholder-count="3">
+          <sc-for list="{{ socials }}" as="s" hint-placeholder-count="4">
             <a href="{{ s.href }}" style="color:var(--ink-200);font-size:14px;display:flex;align-items:center;gap:8px"><x-import component-from-global-scope="NIGameDevNetworkDesignSystem_63115f.Icon" name="{{ s.icon }}" size="{{ 16 }}" hint-size="16px,16px"></x-import>{{ s.label }}</a>
           </sc-for>
         </div></div>
@@ -192,6 +192,7 @@ class Component extends DCLogic {
         { label: 'Discord', icon: 'message-circle', href: 'https://discord.gg/nigamedev' },
         { label: 'Facebook', icon: 'facebook', href: 'https://www.facebook.com/groups/nigamedevnetwork/' },
         { label: 'Instagram', icon: 'instagram', href: 'https://instagram.com/nigamedev' },
+        { label: 'contact@nigame.dev', icon: 'mail', href: 'mailto:contact@nigame.dev' },
       ],
     };
   }
